@@ -1,0 +1,6 @@
+<h2><%= @image.name %></h2>
+<p>
+  <img src="<%= Sunshine.ImageFile.url({@image.image, @image})%>" width="100%" >
+</p>
+
+<p><%= link "Back", to: image_path(@conn, :index) %></p>
